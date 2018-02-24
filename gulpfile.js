@@ -19,7 +19,7 @@ const includeFiles = [
     './*.html'
 ];
 
-const buildDir = 'build';
+const buildDir = 'docs';
 
 gulp.task('copy-assets', function () {
     return gulp.src(assets, {base: '.'})
