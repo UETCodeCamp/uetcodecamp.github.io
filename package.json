@@ -1,0 +1,19 @@
+{
+  "name": "air",
+  "version": "1.0.0",
+  "description": "TITLE:  Air - 100% Fully Responsive Free HTML5 Bootstrap Template",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "dev": "gulp dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-copy": "^1.1.0",
+    "gulp-file-include": "^2.0.1",
+    "gulp-watch": "^5.0.0"
+  }
+}
