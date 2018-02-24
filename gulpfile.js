@@ -16,10 +16,10 @@ const layouts = [
 ];
 
 const includeFiles = [
-    './*.html'
+    './pages/*.html'
 ];
 
-const buildDir = 'docs';
+const buildDir = './';
 
 gulp.task('copy-assets', function () {
     return gulp.src(assets, {base: '.'})
@@ -32,7 +32,7 @@ gulp.task('include-html', function () {
         .pipe(gulp.dest(buildDir));
 });
 
-gulp.task('build', ['copy-assets', 'include-html'], function (cb) {
+gulp.task('build', ['include-html'], function (cb) {
     return cb();
 });
 
