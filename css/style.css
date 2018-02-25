@@ -705,8 +705,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-slider,
-#fh5co-about,
 #fh5co-wireframe,
+#fh5co-about,
 #fh5co-started,
 #fh5co-portfolio,
 #fh5co-blog,
@@ -717,6 +717,11 @@ h1, h2, h3, h4, h5, h6, figure {
     clear: both;
 }
 
+#fh5co-timeline {
+    padding: 7em 0 0 0;
+    clear: both;
+}
+
 .fh5co-partner {
     padding: 0 0 7em 0;
     clear: both;
@@ -724,8 +729,8 @@ h1, h2, h3, h4, h5, h6, figure {
 
 @media screen and (max-width: 768px) {
     #fh5co-slider,
-    #fh5co-about,
     #fh5co-wireframe,
+    #fh5co-about,
     #fh5co-started,
     #fh5co-portfolio,
     #fh5co-blog,
@@ -733,6 +738,10 @@ h1, h2, h3, h4, h5, h6, figure {
     #fh5co-contact,
     #fh5co-footer {
         padding: 3em 0;
+    }
+
+    #fh5co-timeline {
+        padding: 3em 0 0 0;
     }
 }
 
