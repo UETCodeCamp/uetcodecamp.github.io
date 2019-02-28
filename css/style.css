@@ -1721,7 +1721,7 @@ input[type="text"] {
 }
 
 .hello-wrap {
-    margin-top: 8em
+    margin-top: 8em !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -1729,7 +1729,7 @@ input[type="text"] {
         margin-bottom: 8px !important;
     }
     .hello-wrap {
-        margin-top: 6em
+        margin-top: 6em !important;
     }
 }
 
