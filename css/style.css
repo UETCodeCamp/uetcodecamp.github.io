@@ -1720,4 +1720,11 @@ input[type="text"] {
     height: 50px;
 }
 
+@media screen and (max-width: 768px) {
+    .btn.btn-primary.btn-demo {
+        margin-bottom: 8px !important;
+    }
+}
+
+
 /*# sourceMappingURL=style.css.map */

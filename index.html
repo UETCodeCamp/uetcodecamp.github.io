@@ -84,10 +84,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center">
-                    <div class="display-t js-fullheight">
-                        <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-                            <h1>Trau dồi khả năng lập trình & làm ứng dụng thực tế</h1>
-                            <h2>Kết nối đam mê - Cùng phê với code!</h2>
+                    <div class="display-t js-fullheight"
+                        style="margin-top: 9em"
+                    >
+                        <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn"
+                            style="display: block !important"
+                        >
+                            <h1 id="hello_text">>_ Hello, world!</h1>
+                            <h2 id="hello_sub">Chào mừng bạn tới UET Codecamp, mình làm quen nhé? :D</h2>
                             <p>
                                 <a class="btn btn-primary btn-lg btn-demo"
                                    href="http://bit.ly/dangkyCodeCamp2019" target="blank"></i> Đăng kí ngay</a>
@@ -233,7 +237,7 @@
         </div>
     </div>
 
-    <div class="fh5co-partner">
+    <!-- <div class="fh5co-partner">
         <div class="container">
             <div class="row animate-box">
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
@@ -255,7 +259,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="fh5co-partner">
         <div class="container">
@@ -378,6 +382,123 @@
 
 
 
+
+<script>
+    jQuery(document).ready(function($){
+        console.log('dom is ready');
+
+        var fullText = 'Hello, world!';
+        var fullSub = 'Chào mừng bạn tới UET Codecamp, làm quen nhé? :D';
+        var seekPos = 0;
+        var seekSubPos = 0;
+        var shownPointer = true;
+        var shownPointerSub = true;
+        var deleting = true;
+        var text = '';
+        var textSub = '';
+        var helloText = $('#hello_text');
+        var helloSub = $('#hello_sub');
+        
+        // hello text
+        setInterval(renderHello, 17);
+        var changeTextIt = setInterval(changeText, 200);
+        setInterval(changePointer, 800);
+
+        // hello_sub text
+        // helloSub.setText(fullSub);
+        // var renderSubIt = setInterval(renderHelloSub, 17);
+        // var changeTextSubIt = setInterval(changeTextSub, 60);
+        // var changeSubPointerIt = setInterval(changePointerSub, 800);
+
+        function renderHello() {
+            var _text = text;
+
+            if (shownPointer) {
+                _text += '_';
+            } else {
+                _text += '  ';
+            }
+
+            helloText.text(_text);
+        }
+
+        function changeText() {
+            if (fullText.length === seekPos) {
+                deleting = true;
+                clearInterval(changeTextIt);
+
+                setTimeout(function () {
+                    changeTextIt = setInterval(changeText, 100);
+                }, 2000);
+            }
+
+            if (seekPos === 0) {
+                deleting = false;
+                clearInterval(changeTextIt);
+                changeTextIt = setInterval(changeText, 200);
+            }
+
+            text = fullText.substring(0, seekPos);
+            shownPointer = true;
+
+            if (deleting) {
+                seekPos--;
+            } else {
+                seekPos++;
+            }
+        }
+
+        function changePointer() {
+            shownPointer = !shownPointer;
+        } 
+
+        //////////// hello sub //////////////
+        function renderHelloSub() {
+            if (fullSub.length === textSub.length) {
+                shownPointerSub = false;
+                clearInterval(changeTextSubIt);
+                clearInterval(changeSubPointerIt);
+                
+                setTimeout(function(){
+                    clearInterval(renderSubIt);
+                }, 100);
+            }
+
+            var _text = textSub;
+
+            if (shownPointer) {
+                _text += '_';
+            } else {
+                _text += '  ';
+            }
+
+            helloSub.text(_text);
+        }
+
+        function changeTextSub() {
+            // if (seekPos === 0) {
+            //     deleting = false;
+            //     clearInterval(changeTextIt);
+            //     changeTextIt = setInterval(changeText, 200);
+            // }
+
+            textSub = fullSub.substring(0, seekSubPos);
+            shownPointerSub = true;
+            
+            seekSubPos++;
+            // if (deleting) {
+            //     seekPos--;
+            // } else {
+            //     seekPos++;
+            // }
+        }
+
+        function changePointerSub() {
+            shownPointerSub = !shownPointerSub;
+        } 
+
+    })
+</script>
 
 </body>
 </html>
