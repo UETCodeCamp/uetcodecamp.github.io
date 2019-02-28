@@ -1720,9 +1720,16 @@ input[type="text"] {
     height: 50px;
 }
 
+.hello-wrap {
+    margin-top: 8em
+}
+
 @media screen and (max-width: 768px) {
     .btn.btn-primary.btn-demo {
         margin-bottom: 8px !important;
+    }
+    .hello-wrap {
+        margin-top: 6em
     }
 }
 
