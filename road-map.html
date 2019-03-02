@@ -48,7 +48,6 @@
 </head>
 
 <style class="cp-pen-styles">
-
     .example-header {
         background: #3D4351;
         color: #FFF;
@@ -104,7 +103,12 @@
         width: 100%;
     }
 
-    .timeline h1, .timeline h2, .timeline h3, .timeline h4, .timeline h5, .timeline h6 {
+    .timeline h1,
+    .timeline h2,
+    .timeline h3,
+    .timeline h4,
+    .timeline h5,
+    .timeline h6 {
         line-height: inherit;
     }
 
@@ -167,8 +171,8 @@
     }
 
     /*.timeline-item:not(.period):hover .timeline-marker:before {*/
-        /*background: transparent;*/
-        /*border: 3px solid #FF6B6B;*/
+    /*background: transparent;*/
+    /*border: 3px solid #FF6B6B;*/
     /*}*/
 
     .timeline-item:not(.period) .timeline-marker:before {
@@ -230,16 +234,20 @@
         MOD: TIMELINE SPLIT
     ----------------------------------------------*/
     @media (min-width: 768px) {
-        .timeline-split .timeline, .timeline-centered .timeline {
+
+        .timeline-split .timeline,
+        .timeline-centered .timeline {
             display: table;
         }
 
-        .timeline-split .timeline-item, .timeline-centered .timeline-item {
+        .timeline-split .timeline-item,
+        .timeline-centered .timeline-item {
             display: table-row;
             padding: 0;
         }
 
-        .timeline-split .timeline-info, .timeline-centered .timeline-info,
+        .timeline-split .timeline-info,
+        .timeline-centered .timeline-info,
         .timeline-split .timeline-marker,
         .timeline-centered .timeline-marker,
         .timeline-split .timeline-content,
@@ -250,19 +258,23 @@
             vertical-align: top;
         }
 
-        .timeline-split .timeline-marker, .timeline-centered .timeline-marker {
+        .timeline-split .timeline-marker,
+        .timeline-centered .timeline-marker {
             position: relative;
         }
 
-        .timeline-split .timeline-content, .timeline-centered .timeline-content {
+        .timeline-split .timeline-content,
+        .timeline-centered .timeline-content {
             padding-left: 30px;
         }
 
-        .timeline-split .timeline-info, .timeline-centered .timeline-info {
+        .timeline-split .timeline-info,
+        .timeline-centered .timeline-info {
             padding-right: 30px;
         }
 
-        .timeline-split .period .timeline-title, .timeline-centered .period .timeline-title {
+        .timeline-split .period .timeline-title,
+        .timeline-centered .period .timeline-title {
             position: relative;
             left: -45px;
         }
@@ -272,6 +284,7 @@
         MOD: TIMELINE CENTERED
     ----------------------------------------------*/
     @media (min-width: 992px) {
+
         .timeline-centered,
         .timeline-centered .timeline-item,
         .timeline-centered .timeline-info,
@@ -298,43 +311,43 @@
             width: 50%;
         }
 
-        .timeline-centered > .timeline-item .timeline-info {
+        .timeline-centered>.timeline-item .timeline-info {
             float: left;
             text-align: right;
             padding-right: 30px;
         }
 
-        .timeline-centered > .timeline-item .timeline-content {
+        .timeline-centered>.timeline-item .timeline-content {
             float: right;
             text-align: left;
             padding-left: 30px;
         }
 
         /*.timeline-centered > .timeline-item:nth-child(odd) .timeline-info {*/
-            /*float: left;*/
-            /*text-align: right;*/
-            /*padding-right: 30px;*/
+        /*float: left;*/
+        /*text-align: right;*/
+        /*padding-right: 30px;*/
         /*}*/
 
         /*.timeline-centered > .timeline-item:nth-child(odd) .timeline-content {*/
-            /*float: right;*/
-            /*text-align: left;*/
-            /*padding-left: 30px;*/
+        /*float: right;*/
+        /*text-align: left;*/
+        /*padding-left: 30px;*/
         /*}*/
 
         /*.timeline-centered > .timeline-item:nth-child(even) .timeline-info {*/
-            /*float: right;*/
-            /*text-align: left;*/
-            /*padding-left: 30px;*/
+        /*float: right;*/
+        /*text-align: left;*/
+        /*padding-left: 30px;*/
         /*}*/
 
         /*.timeline-centered > .timeline-item:nth-child(even) .timeline-content {*/
-            /*float: left;*/
-            /*text-align: right;*/
-            /*padding-right: 30px;*/
+        /*float: left;*/
+        /*text-align: right;*/
+        /*padding-right: 30px;*/
         /*}*/
 
-        .timeline-centered > .timeline-item.period .timeline-content {
+        .timeline-centered>.timeline-item.period .timeline-content {
             float: none;
             padding: 0;
             width: 100%;
@@ -371,28 +384,46 @@
 
 <body>
 
-<div class="fh5co-loader"></div>
+    <div class="fh5co-loader"></div>
 
-<div id="page">
-    <nav class="fh5co-nav" role="navigation">
-        <div class="top-menu">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-2">
-                        <div id="fh5co-logo">
-                            <a href="index.html"><img class="logo-img" src="./images/logo2.png" alt="logo"></a>
+    <div id="page">
+        <nav class="fh5co-nav" role="navigation">
+            <div class="top-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <div id="fh5co-logo">
+                                <a href="index.html"><img class="logo-img" src="./images/logo2.png" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-10 text-right menu-1">
+                            <ul>
+                                <li><a href="http://blog.uetcodecamp.org" target="blank">Blog</a></li>
+                                <li><a href="index.html">Trang chủ</a></li>
+                                <li class="active"><a href="road-map.html">Lộ trình</a></li>
+                                <li><a href="about.html">Về chúng tôi</a></li>
+                                <li><a href="contact.html">Liên hệ</a></li>
+                                <li class="btn-cta"><a href="http://bit.ly/dangkyCodeCamp2019" target="blank"><span>Đăng
+                                            kí</span></a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-xs-10 text-right menu-1">
-                        <ul>
-                            <li><a href="http://blog.uetcodecamp.org" target="blank">Blog</a></li>
-                            <li><a href="index.html">Trang chủ</a></li>
-                            <li class="active"><a href="road-map.html">Lộ trình</a></li>
-                            <li><a href="about.html">Về chúng tôi</a></li>
-                            <li><a href="contact.html">Liên hệ</a></li>
-                            <li class="btn-cta"><a
-                                    href="http://bit.ly/dangkyCodeCamp2019" target="blank"><span>Đăng kí</span></a></li>
-                        </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <div id="fh5co-timeline">
+            <div class="container">
+                <div class="row animate-box">
+                    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                        <h2>Lộ trình UET Code Camp 2018</h2>
+                        <p>Trong quá trình tổ chức, một số thời gian hoặc đề tài có thể được thay đổi để phù hợp với
+                            chương
+                            trình. Mọi thông tin thay đổi sẽ được cập nhật, thông báo tại đây và trên fanpage của UET
+                            Code
+                            Camp 2018.</p>
+                        <!--<small>Đang được cập nhật ...</small>-->
                     </div>
                 </div>
 
@@ -633,16 +664,42 @@
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
+        <style>
+            .tabs {
+                text-align: center;
+            }
 
-    <div class="timeline-section">
-        <div class="container-fluid">
-            <div class="row example-centered animate-box">
-                <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-                    <ul class="timeline timeline-centered">
-<style>
+            .tabs input {
+                display: none;
+            }
+
+            .tabs label {
+                cursor: pointer;
+                padding: 2px 9px;
+            }
+
+            .tabs input:checked+label {
+                border-bottom: 4px solid #dd356e;
+            }
+
+            #tab-1:checked~#content #content-1,
+            #tab-2:checked~#content #content-2,
+            #tab-3:checked~#content #content-3 {
+                display: block;
+                /* background: #3D4351; */
+            }
+
+            #content #content-1,
+            #content-2,
+            #content-3 {
+                display: none;
+            }
+
+            #content {
+                padding: 16px;
+            }
+
             #content .block-tab {
                 padding: 9px 16px;
                 text-align: left;
@@ -673,36 +730,27 @@
             .block-tab i {
                 margin-bottom: 0;
             }
+
+            .block-tab {
+                font-size: 16px;
+            }
+
+            .block-tab+.block-tab {
+                margin-top: 16px;
+            }
+
+            .block-tab .sub-title {
+                display: block;
+                text-align: center;
+            }
+
             .block-tab h4 {
                 font-weight: 900;
                 display: block;
                 text-align: center;
                 margin-bottom: 2px;
             }
-
         </style>
-                        <li class="timeline-item" time="22-02-2018">
-                            <div class="timeline-info">
-                                <span>22 - 28 tháng 2, 2018</span>
-                            </div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3 class="timeline-title">Mở đơn đăng kí</h3>
-                            </div>
-                        </li>
-
-                        <li class="timeline-item" time="01-03-2018">
-                            <div class="timeline-info">
-                                <span>01 - 03 tháng 3, 2018</span>
-                            </div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3 class="timeline-title">Tổ chức đợt test vòng 1</h3>
-                            </div>
-                        </li>
-
-           
-
 
         <div id="fh5co-started">
     <div class="overlay"></div>
@@ -774,12 +822,12 @@
 </footer>
 
     </div>
-</footer>
 
-</div>
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+    </div>
 
-
-<!-- jQuery -->
+    <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
 <!-- jQuery Easing -->
 <script src="js/jquery.easing.1.3.js"></script>
@@ -795,29 +843,29 @@
 
 
 
-<script src="./js/moment.min.js"></script>
+    <script src="./js/moment.min.js"></script>
 
-<script>
-    // active timeline item
-    jQuery(document).ready(function ($) {
-        var timeFormat = "DD-MM-YYYY";
-        var now = moment();
-        var items = $('.timeline-item');
+    <script>
+        // active timeline item
+        jQuery(document).ready(function ($) {
+            var timeFormat = "DD-MM-YYYY";
+            var now = moment();
+            var items = $('.timeline-item');
 
-        for (var i=0; i < items.length; i++) {
-            var currItem = $(items[i]);
-            var time = currItem.attr('time');
-            if (time) {
-                var momentTimeItem = moment(time, timeFormat);
+            for (var i = 0; i < items.length; i++) {
+                var currItem = $(items[i]);
+                var time = currItem.attr('time');
+                if (time) {
+                    var momentTimeItem = moment(time, timeFormat);
 
-                if (momentTimeItem.diff(now) < 0) {
-                    currItem.addClass('active');
+                    if (momentTimeItem.diff(now) < 0) {
+                        currItem.addClass('active');
+                    }
                 }
             }
-        }
-    })
-</script>
+        })
+    </script>
 
 </body>
-</html>
 
+</html>
