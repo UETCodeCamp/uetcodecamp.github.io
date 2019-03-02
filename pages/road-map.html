@@ -431,14 +431,20 @@
                                 </div>
                             </li>
                         </ul>
+                        <div class="block-tab">
+                            <div class="collapse">
+                                Thời gian dự kiến là ngày x tháng y
+                            </div>
+                        </div>
                         <div class="tabs">
                             <h2 class="timeline-title">Giới thiệu</h2>
-                            <input checked name="tab" type="radio" id="tab-1" />
+
+                            <input name="tab" type="radio" id="tab-1" />
                             <label class="tab" for="tab-1">
                                 Khóa Java
                             </label>
 
-                            <input name="tab" type="radio" id="tab-2" />
+                            <input checked name="tab" type="radio" id="tab-2" />
                             <label class="tab" for="tab-2">
                                 Khóa NodeJS
                             </label>
@@ -460,6 +466,7 @@
                                             nào về lập trình ứng dụng web, nhưng bạn cần có kiến thức cơ bản về Java
                                         </p>
                                     </div>
+
                                     <div class="block-tab">
                                         <h4><b>Về tôi</b></h4>
                                         <b>Họ tên: </b> Lê Đức Anh <br>
@@ -593,7 +600,130 @@
                                         với PHP, MySQL, Node.js, MongoDB, ReactJS, Redis, Elasticsearch. Mình cũng là
                                         một trong hai mentor chính của khóa ReactJS năm 2018 của UET CodeCamp.
                                     </div>
+                                    <div class="block-tab">
+                                        <h4><b>Lộ trình</b></h4>
+                                        <div class="collapse">
+                                            <label for="node-1">Làm quen với Javascript</label>
+                                            <input checked name="java" id="node-1" type="radio" />
+                                            <ul class="collapse-content">
+                                                <li>Javascript là gì?
+                                                </li>
+                                                <li> Cú pháp
+                                                </li>
+                                                <li> Biến và kiểu dữ liệu
+                                                </li>
+                                                <li> Operators, Phép gán
+                                                </li>
+                                                <li> Hàm và scope
+                                                </li>
+                                                <li> Object, Array
+                                                </li>
+                                                <li> Điều kiện và vòng lặp</li>
+                                            </ul>
+                                        </div>
 
+                                        <div class="collapse">
+                                            <label for="node-2">Làm quen với Node.js</label>
+                                            <input name="java" id="node-2" type="radio" />
+                                            <ul class="collapse-content">
+                                                <li>Node.js là gì?
+                                                </li>
+                                                <li> Cài đặt môi trường, ứng dụng Hello World
+                                                </li>
+                                                <li> npm là gì?
+                                                </li>
+                                                <li> Developing and debugging
+                                                </li>
+                                                <li> Môi trường phát triển với Nodemon
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="collapse">
+                                            <label for="node-3">Bất đồng bộ</label>
+                                            <input name="java" id="node-3" type="radio" />
+                                            <ul class="collapse-content">
+                                                <li>Bất đồng bộ trong Node.js là gì
+                                                </li>
+                                                <li>Callstack và Event Loop
+                                                </li>
+                                                <li> Callback function
+                                                </li>
+                                                <li> Tìm hiểu về Promise
+                                                </li>
+                                                <li> Giới thiệu Async/Await
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="collapse">
+                                            <label for="node-4">Xây dựng REST API với Express</label>
+                                            <input name="java" id="node-4" type="radio" />
+                                            <ul class="collapse-content">
+                                                <li>Http module là gì?
+                                                </li>
+                                                <li>Cách tạo một web server? Sử dụng Express để tạo 1 web server
+                                                </li>
+                                                <li>Middleware trong Express
+                                                </li>
+                                                <li>Routing trong Express
+                                                </li>
+                                                <li> MVC là gì? Áp dụng mô hình MVC trong Express
+                                                </li>
+                                                <li> Sử dụng POSTMan để test request
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="collapse">
+                                            <label for="node-5">Xử lý dữ liệu với MongoDB</label>
+                                            <input name="java" id="node-5" type="radio" />
+                                            <ul class="collapse-content">
+                                                <li>Hệ quản trị cơ sở dữ liệu là gì?
+                                                </li>
+                                                <li>MongoDB là gì? Cách cài đặt MongoDB
+                                                </li>
+                                                <li>Mongoose là gì? Schema, Model trong Mongoose
+                                                </li>
+                                                <li>CURD trong Mongoose
+                                                </li>
+                                                <li> Kết hợp với Express để xây dựng REST API
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="collapse">
+                                            <label for="node-6">Bảo mật và xác thực trong ứng dụng REST API</label>
+                                            <input name="java" id="node-6" type="radio" />
+                                            <ul class="collapse-content">
+                                                <li>Tại sao phải bảo mật cho REST API
+                                                </li>
+                                                <li>JWT là gì? JWT hoạt động như thế nào
+                                                </li>
+                                                <li>Áp dụng JWT cho REST API
+                                                </li>
+                                                <li>Mã hóa mật khẩu
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="collapse">
+                                            <label for="node-7">Xây dựng ứng dụng thời gian thực</label>
+                                            <input name="java" id="node-7" type="radio" />
+                                            <ul class="collapse-content">
+                                                <li>WebSocket là gì?
+                                                </li>
+                                                <li>Tại sao phải dùng WebSocket thay vì HTTP
+                                                </li>
+                                                <li>Socket.IO là gì? Áp dụng Socket.IO vào ứng dụng
+                                                </li>
+                                                <li>Lắng nghe và phát sự kiện trong Socket.IO
+                                                </li>
+                                                <li>Broadcasting Events
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                     <div class="block-tab">
                                         <h4>Mục tiêu đạt được sau khóa học</h4>
                                         <ul>
@@ -667,18 +797,21 @@
                 border: 1.5px solid #dd356e;
                 padding: 6px;
                 display: block;
-                margin:6px 0;
+                margin: 6px 0;
             }
-            .collapse-content{
+
+            .collapse-content {
                 display: none;
             }
-            .collapse input:checked + .collapse-content{
+
+            .collapse input:checked+.collapse-content {
                 display: block;
             }
+
             .collapse label {
                 padding: 0;
                 margin: 0;
-                margin-left:6px;
+                margin-left: 6px;
                 display: block;
             }
 
