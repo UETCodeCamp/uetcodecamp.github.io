@@ -1,7 +1,7 @@
 {
-  "name": "air",
+  "name": "landing-page",
   "version": "1.0.0",
-  "description": "TITLE:  Air - 100% Fully Responsive Free HTML5 Bootstrap Template",
+  "description": "Uetcodecamp - landing page",
   "main": "index.js",
   "scripts": {
     "build": "gulp build",
