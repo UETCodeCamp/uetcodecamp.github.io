@@ -11,8 +11,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-copy": "^1.1.0",
+    "gulp": "^4.0.2",
+    "gulp-copy": "^4.0.1",
     "gulp-file-include": "^2.0.1",
     "gulp-watch": "^5.0.0"
   }
